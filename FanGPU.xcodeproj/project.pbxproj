@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B8BFF68229B560200013BBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BFF67229B560200013BBE /* main.swift */; };
+		4B8BFF70229B5A5D00013BBE /* SMCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; };
+		4B8BFF72229B5AEE00013BBE /* SMCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +22,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4B8BFF71229B5AE300013BBE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B8BFF72229B5AEE00013BBE /* SMCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B8BFF64229B560200013BBE /* FanGPU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FanGPU; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8BFF67229B560200013BBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SMCKit.framework; path = Carthage/Build/Mac/SMCKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8BFF70229B5A5D00013BBE /* SMCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +57,7 @@
 			children = (
 				4B8BFF66229B560200013BBE /* FanGPU */,
 				4B8BFF65229B560200013BBE /* Products */,
+				4B8BFF6E229B5A5D00013BBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +77,14 @@
 			path = FanGPU;
 			sourceTree = "<group>";
 		};
+		4B8BFF6E229B5A5D00013BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -69,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8BFF6B229B560200013BBE /* Build configuration list for PBXNativeTarget "FanGPU" */;
 			buildPhases = (
+				4B8BFF71229B5AE300013BBE /* CopyFiles */,
 				4B8BFF60229B560200013BBE /* Sources */,
 				4B8BFF61229B560200013BBE /* Frameworks */,
 				4B8BFF62229B560200013BBE /* CopyFiles */,
@@ -246,6 +270,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -256,6 +284,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
