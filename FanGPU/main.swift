@@ -9,8 +9,6 @@
 import Foundation
 import SMCKit
 
-print("Hello, World!")
-
 do {
     try SMCKit.open()
 } catch {
@@ -23,20 +21,8 @@ defer {
 }
 
 do {
-    let sensors = try SMCKit.allKnownTemperatureSensors()
-    let gpuSensor = sensors.first{$0.name == "GPU_0_DIODE"}!
-
-    let gpuTemp = try SMCKit.temperature(gpuSensor.code)
-    print(gpuTemp)
-
-//    try SMCKit.fanSetMinSpeed(0, speed: 2000)
-    let fans = try SMCKit.allFans()
-    fans.forEach {
-        print($0)
-    }
-
+    let fanController = try FanController()
+    try fanController.work()
 } catch {
     print(error)
 }
-
-
