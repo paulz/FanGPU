@@ -16,6 +16,7 @@
 		4BA7A2F9229B6B2C0090A655 /* SMCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BA7A2FB229B6CEB0090A655 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7A2FA229B6CEB0090A655 /* Placeholder.swift */; };
 		4BA7A2FC229B6F860090A655 /* SwiftFanGRU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */; };
+		4BA7A2FE229B88B80090A655 /* FanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7A2FD229B88B80090A655 /* FanController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		4BA7A2EE229B6A6A0090A655 /* SwiftFanGRUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFanGRUTests.swift; sourceTree = "<group>"; };
 		4BA7A2F0229B6A6A0090A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA7A2FA229B6CEB0090A655 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		4BA7A2FD229B88B80090A655 /* FanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,9 @@
 				4B8BFF65229B560200013BBE /* Products */,
 				4B8BFF6E229B5A5D00013BBE /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		4B8BFF65229B560200013BBE /* Products */ = {
 			isa = PBXGroup;
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8BFF67229B560200013BBE /* main.swift */,
+				4BA7A2FD229B88B80090A655 /* FanController.swift */,
 			);
 			path = FanGPU;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8BFF68229B560200013BBE /* main.swift in Sources */,
+				4BA7A2FE229B88B80090A655 /* FanController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +452,7 @@
 		4B8BFF6C229B560200013BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -465,6 +472,7 @@
 		4B8BFF6D229B560200013BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				FRAMEWORK_SEARCH_PATHS = (

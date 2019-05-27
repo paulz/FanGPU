@@ -28,6 +28,15 @@ do {
 
     let gpuTemp = try SMCKit.temperature(gpuSensor.code)
     print(gpuTemp)
+
+//    try SMCKit.fanSetMinSpeed(0, speed: 2000)
+    let fans = try SMCKit.allFans()
+    fans.forEach {
+        print($0)
+    }
+
 } catch {
     print(error)
 }
+
+
