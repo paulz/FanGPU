@@ -24,11 +24,12 @@ struct FanController {
 
     init() throws {
         gpuDiodeSensor = try SMCKit.allKnownTemperatureSensors().first{$0.name == "GPU_0_DIODE"}!
-        mainFan = try SMCKit.allFans().first{$0.name == "Main"}!
+        mainFan = try SMCKit.allFans().first{$0.name.hasPrefix("Main")}!
+        print(mainFan)
         appropriateFanForTemperature = [
         .normal:mainFan.minSpeed,
         .hot:(mainFan.minSpeed+mainFan.maxSpeed)/2,
-        .veryHot:mainFan.maxSpeed
+        .veryHot:mainFan.maxSpeed-1
         ]
     }
 
@@ -47,6 +48,7 @@ struct FanController {
     }
 
     func setFanMinimumSpeed(speed: Int) throws {
+        print("setting min fan speed to \(speed)")
         try SMCKit.fanSetMinSpeed(0, speed: speed)
     }
 
