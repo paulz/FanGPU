@@ -10,7 +10,23 @@
 		4B8BFF68229B560200013BBE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BFF67229B560200013BBE /* main.swift */; };
 		4B8BFF70229B5A5D00013BBE /* SMCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; };
 		4B8BFF72229B5AEE00013BBE /* SMCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BA7A2EA229B6A6A0090A655 /* SwiftFanGRU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */; };
+		4BA7A2EF229B6A6A0090A655 /* SwiftFanGRUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7A2EE229B6A6A0090A655 /* SwiftFanGRUTests.swift */; };
+		4BA7A2F1229B6A6A0090A655 /* SwiftFanGRU.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA7A2E3229B6A6A0090A655 /* SwiftFanGRU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BA7A2F9229B6B2C0090A655 /* SMCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BA7A2FB229B6CEB0090A655 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7A2FA229B6CEB0090A655 /* Placeholder.swift */; };
+		4BA7A2FC229B6F860090A655 /* SwiftFanGRU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BA7A2EB229B6A6A0090A655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B8BFF5C229B560200013BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA7A2E0229B6A690090A655;
+			remoteInfo = SwiftFanGRU;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4B8BFF62229B560200013BBE /* CopyFiles */ = {
@@ -32,12 +48,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BA7A2F8229B6B170090A655 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4BA7A2F9229B6B2C0090A655 /* SMCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B8BFF64229B560200013BBE /* FanGPU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FanGPU; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8BFF67229B560200013BBE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4B8BFF6F229B5A5D00013BBE /* SMCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SMCKit.framework; path = Carthage/Build/Mac/SMCKit.framework; sourceTree = "<group>"; };
+		4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFanGRU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA7A2E3229B6A6A0090A655 /* SwiftFanGRU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFanGRU.h; sourceTree = "<group>"; };
+		4BA7A2E4229B6A6A0090A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA7A2E9229B6A6A0090A655 /* SwiftFanGRUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFanGRUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA7A2EE229B6A6A0090A655 /* SwiftFanGRUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFanGRUTests.swift; sourceTree = "<group>"; };
+		4BA7A2F0229B6A6A0090A655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA7A2FA229B6CEB0090A655 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +78,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA7A2FC229B6F860090A655 /* SwiftFanGRU.framework in Frameworks */,
 				4B8BFF70229B5A5D00013BBE /* SMCKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA7A2DE229B6A690090A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA7A2E6229B6A6A0090A655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA7A2EA229B6A6A0090A655 /* SwiftFanGRU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				4B8BFF66229B560200013BBE /* FanGPU */,
+				4BA7A2E2229B6A6A0090A655 /* SwiftFanGRU */,
+				4BA7A2ED229B6A6A0090A655 /* SwiftFanGRUTests */,
 				4B8BFF65229B560200013BBE /* Products */,
 				4B8BFF6E229B5A5D00013BBE /* Frameworks */,
 			);
@@ -65,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				4B8BFF64229B560200013BBE /* FanGPU */,
+				4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */,
+				4BA7A2E9229B6A6A0090A655 /* SwiftFanGRUTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +138,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4BA7A2E2229B6A6A0090A655 /* SwiftFanGRU */ = {
+			isa = PBXGroup;
+			children = (
+				4BA7A2E3229B6A6A0090A655 /* SwiftFanGRU.h */,
+				4BA7A2FA229B6CEB0090A655 /* Placeholder.swift */,
+				4BA7A2E4229B6A6A0090A655 /* Info.plist */,
+			);
+			path = SwiftFanGRU;
+			sourceTree = "<group>";
+		};
+		4BA7A2ED229B6A6A0090A655 /* SwiftFanGRUTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA7A2EE229B6A6A0090A655 /* SwiftFanGRUTests.swift */,
+				4BA7A2F0229B6A6A0090A655 /* Info.plist */,
+			);
+			path = SwiftFanGRUTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BA7A2DC229B6A690090A655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA7A2F1229B6A6A0090A655 /* SwiftFanGRU.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4B8BFF63229B560200013BBE /* FanGPU */ = {
@@ -106,18 +189,62 @@
 			productReference = 4B8BFF64229B560200013BBE /* FanGPU */;
 			productType = "com.apple.product-type.tool";
 		};
+		4BA7A2E0229B6A690090A655 /* SwiftFanGRU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA7A2F2229B6A6A0090A655 /* Build configuration list for PBXNativeTarget "SwiftFanGRU" */;
+			buildPhases = (
+				4BA7A2DC229B6A690090A655 /* Headers */,
+				4BA7A2DD229B6A690090A655 /* Sources */,
+				4BA7A2F8229B6B170090A655 /* CopyFiles */,
+				4BA7A2DE229B6A690090A655 /* Frameworks */,
+				4BA7A2DF229B6A690090A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftFanGRU;
+			productName = SwiftFanGRU;
+			productReference = 4BA7A2E1229B6A690090A655 /* SwiftFanGRU.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BA7A2E8229B6A6A0090A655 /* SwiftFanGRUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA7A2F5229B6A6A0090A655 /* Build configuration list for PBXNativeTarget "SwiftFanGRUTests" */;
+			buildPhases = (
+				4BA7A2E5229B6A6A0090A655 /* Sources */,
+				4BA7A2E6229B6A6A0090A655 /* Frameworks */,
+				4BA7A2E7229B6A6A0090A655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA7A2EC229B6A6A0090A655 /* PBXTargetDependency */,
+			);
+			name = SwiftFanGRUTests;
+			productName = SwiftFanGRUTests;
+			productReference = 4BA7A2E9229B6A6A0090A655 /* SwiftFanGRUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4B8BFF5C229B560200013BBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Paul Zabelin";
 				TargetAttributes = {
 					4B8BFF63229B560200013BBE = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					4BA7A2E0229B6A690090A655 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					4BA7A2E8229B6A6A0090A655 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -134,9 +261,28 @@
 			projectRoot = "";
 			targets = (
 				4B8BFF63229B560200013BBE /* FanGPU */,
+				4BA7A2E0229B6A690090A655 /* SwiftFanGRU */,
+				4BA7A2E8229B6A6A0090A655 /* SwiftFanGRUTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA7A2DF229B6A690090A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA7A2E7229B6A6A0090A655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B8BFF60229B560200013BBE /* Sources */ = {
@@ -147,12 +293,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BA7A2DD229B6A690090A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA7A2FB229B6CEB0090A655 /* Placeholder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA7A2E5229B6A6A0090A655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA7A2EF229B6A6A0090A655 /* SwiftFanGRUTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA7A2EC229B6A6A0090A655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA7A2E0229B6A690090A655 /* SwiftFanGRU */;
+			targetProxy = 4BA7A2EB229B6A6A0090A655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4B8BFF69229B560200013BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -207,6 +378,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -215,6 +388,7 @@
 		4B8BFF6A229B560200013BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -262,6 +436,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 			};
@@ -276,8 +452,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				LD_RUNPATH_SEARCH_PATHS = .;
+				LD_RUNPATH_SEARCH_PATHS = (
+					.,
+					"@executable_path/SwiftFanGRU.framework/Versions/Current/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 			};
 			name = Debug;
 		};
@@ -290,8 +471,118 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				LD_RUNPATH_SEARCH_PATHS = .;
+				LD_RUNPATH_SEARCH_PATHS = (
+					.,
+					"@executable_path/SwiftFanGRU.framework/Versions/Current/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+			};
+			name = Release;
+		};
+		4BA7A2F3229B6A6A0090A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftFanGRU/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.paulz.SwiftFanGRU;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BA7A2F4229B6A6A0090A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftFanGRU/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.paulz.SwiftFanGRU;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BA7A2F6229B6A6A0090A655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				INFOPLIST_FILE = SwiftFanGRUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.paulz.SwiftFanGRUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4BA7A2F7229B6A6A0090A655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 35KC7LV9BL;
+				INFOPLIST_FILE = SwiftFanGRUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.paulz.SwiftFanGRUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -312,6 +603,24 @@
 			buildConfigurations = (
 				4B8BFF6C229B560200013BBE /* Debug */,
 				4B8BFF6D229B560200013BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA7A2F2229B6A6A0090A655 /* Build configuration list for PBXNativeTarget "SwiftFanGRU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA7A2F3229B6A6A0090A655 /* Debug */,
+				4BA7A2F4229B6A6A0090A655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA7A2F5229B6A6A0090A655 /* Build configuration list for PBXNativeTarget "SwiftFanGRUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA7A2F6229B6A6A0090A655 /* Debug */,
+				4BA7A2F7229B6A6A0090A655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
