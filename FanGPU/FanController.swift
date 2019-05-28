@@ -31,13 +31,14 @@ struct FanController {
         appropriateFanForTemperature = [
         .normal:minSpeed,
         .hot:(minSpeed+mainFan.maxSpeed)/2,
-        .veryHot:mainFan.maxSpeed-1
+        .veryHot:mainFan.maxSpeed - 10
         ]
     }
 
     let appropriateFanForTemperature: [GpuTemp: Int]
 
     mutating func work() throws {
+        try testMaxFanSpeed()
         while true {
             try updateFanSpeed()
             Thread.sleep(forTimeInterval: 2)
@@ -55,6 +56,12 @@ struct FanController {
             try SMCKit.fanSetMinSpeed(0, speed: speed)
             previousSpeed = speed
         }
+    }
+
+    mutating func testMaxFanSpeed() throws {
+        let maxSpeed = appropriateFanForTemperature[.veryHot]!
+        print("testing maximum fan speed: \(maxSpeed)")
+        try SMCKit.fanSetMinSpeed(0, speed: maxSpeed)
     }
 
     mutating func updateFanSpeed() throws {
