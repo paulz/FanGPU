@@ -21,6 +21,7 @@ enum GpuTemp: Int {
 struct FanController {
     let gpuDiodeSensor: TemperatureSensor
     let mainFan: Fan
+    var previousSpeed: Int = 0
 
     init() throws {
         gpuDiodeSensor = try SMCKit.allKnownTemperatureSensors().first{$0.name == "GPU_0_DIODE"}!
@@ -36,7 +37,7 @@ struct FanController {
 
     let appropriateFanForTemperature: [GpuTemp: Int]
 
-    func work() throws {
+    mutating func work() throws {
         while true {
             try updateFanSpeed()
             sleep(1)
@@ -48,14 +49,15 @@ struct FanController {
         return GpuTemp(celcius: Int(gpuTemp))
     }
 
-    func setFanMinimumSpeed(speed: Int) throws {
-        if mainFan.minSpeed != speed {
+    mutating func setFanMinimumSpeed(speed: Int) throws {
+        if previousSpeed != speed {
             print("changing minimum fan speed to \(speed)")
             try SMCKit.fanSetMinSpeed(0, speed: speed)
+            previousSpeed = speed
         }
     }
 
-    func updateFanSpeed() throws {
+    mutating func updateFanSpeed() throws {
         try setFanMinimumSpeed(speed: appropriateFanForTemperature[getGpuTemperature()]!)
     }
 }

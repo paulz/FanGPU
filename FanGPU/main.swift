@@ -31,7 +31,7 @@ defer {
 }
 
 do {
-    let fanController = try FanController()
+    var fanController = try FanController()
     try fanController.work()
 } catch {
     NSLog("error: \(error)")
