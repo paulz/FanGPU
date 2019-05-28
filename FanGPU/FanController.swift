@@ -40,7 +40,7 @@ struct FanController {
     mutating func work() throws {
         while true {
             try updateFanSpeed()
-            sleep(1)
+            Thread.sleep(forTimeInterval: 2)
         }
     }
 
