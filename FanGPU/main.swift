@@ -24,5 +24,5 @@ do {
     let fanController = try FanController()
     try fanController.work()
 } catch {
-    print(error)
+    NSLog("error: \(error)")
 }
