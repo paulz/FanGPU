@@ -49,8 +49,10 @@ struct FanController {
     }
 
     func setFanMinimumSpeed(speed: Int) throws {
-//        print("setting min fan speed to \(speed)")
-        try SMCKit.fanSetMinSpeed(0, speed: speed)
+        if mainFan.minSpeed != speed {
+            print("changing minimum fan speed to \(speed)")
+            try SMCKit.fanSetMinSpeed(0, speed: speed)
+        }
     }
 
     func updateFanSpeed() throws {
