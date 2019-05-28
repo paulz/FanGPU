@@ -9,6 +9,16 @@
 import Foundation
 import SMCKit
 
+func disableOutputBuffering() {
+    setlinebuf(stdout)
+}
+
+func enablePrintOutput() {
+    disableOutputBuffering()
+}
+
+enablePrintOutput()
+
 do {
     try SMCKit.open()
 } catch {
